@@ -4,13 +4,6 @@ import getpass
 import os
 
 
-
-l1=[]
-l2=[]
-
-
-names_list=[]
-
 def main():
     with sync_playwright() as p:
         browser = p.firefox.launch(headless=False)
