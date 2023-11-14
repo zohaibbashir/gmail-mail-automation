@@ -13,4 +13,4 @@ A Python script that is used to automate sending emails
 ### Example Usage
 
 ```bash
-python a.py -e sender@example.com -p password123 -to recipient@example.com -S "Subject" -T "Hello, this is the email body."
+python a.py -e "sender@example.com" -p "password123" -to "recipient@example.com" -S "Subject" -T "Hello, this is the email body."
