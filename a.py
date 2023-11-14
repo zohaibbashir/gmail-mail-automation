@@ -87,6 +87,8 @@ if __name__ == "__main__":
 
     if args.email:
         email=args.email
+    else:
+        email=input("Enter Your Email: ")
 
     if args.pswd:
         password=args.pswd
@@ -95,15 +97,20 @@ if __name__ == "__main__":
 
     if args.to:
         recipient = args.to
+    else:
+        recipient = input("Enter the email of the person you want to mail: ")
     if args.cc:
         email_cc = args.cc
     if args.bcc:
         email_bcc = args.bcc
     if args.subject:
         email_subject = args.subject
+    else:
+        email_subject = input("Enter Email Subject: ")
     if args.text:
         email_text = args.text
+    else:
+        email_text = input("Enter the text portion of the mail: ")
 
 
     main()
-       
