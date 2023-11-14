@@ -12,15 +12,13 @@ def main():
 
         page.goto("https://www.google.com/gmail/about/", timeout=9000)
         page.wait_for_timeout(1000)
-        # print(email,recipient,email_cc,email_bcc,email_text)
-        # print(email_subject,password)
         signin_xpath='//div[@class="header__aside__buttons"]//a[2]'
         signin_link = page.locator(signin_xpath)
-        # print(more_locations_link)
+       
         if signin_link:
             signin_link.click()
             page.wait_for_timeout(1000)
-            # print(email)
+       
             page.locator('//input[@type="email"]').fill(email)
             page.wait_for_timeout(3000)
 
