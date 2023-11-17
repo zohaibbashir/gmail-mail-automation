@@ -1,5 +1,6 @@
-# gmail-mail-automation
-A Python script that is used to automate sending emails
+# Gmail-Mail-Automation
+A Python script that is used to automate sending emails in two ways
+## Method - 1
 ### Command Line Options
 
 - `-e`: Sender's email address.
@@ -14,3 +15,7 @@ A Python script that is used to automate sending emails
 
 ```bash
 python a.py -e "sender@example.com" -p "password123" -to "recipient@example.com" -S "Subject" -T "Hello, this is the email body."
+```
+
+## Method - 2
+If you haven't used the command line then the program will prompt you to provide the necessary details
