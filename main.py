@@ -12,7 +12,7 @@ def main():
 
         page.goto("https://www.google.com/gmail/about/", timeout=9000)
         page.wait_for_timeout(1000)
-        signin_xpath='//div[@class="header__aside__buttons"]//a[2]'
+        signin_xpath='//a[contains(text(),"Sign in")]'
         signin_link = page.locator(signin_xpath)
        
         if signin_link:
